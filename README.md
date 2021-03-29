@@ -1,4 +1,4 @@
-**In this fork Note class has been renamed to MNNote, for compatability with wslib.**
+**!! In this fork Note class has been renamed to MNNote, for compatability with wslib !!**
 
 # MusicalNotation
 
