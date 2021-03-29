@@ -1,6 +1,6 @@
-# MusicalNotation
-
 **In this fork Note class has been renamed to MNNote, for compatability with wslib.**
+
+# MusicalNotation
 
 A set of classes related to Musical Notation (Percussion, Note, Chord, Progression).
 
