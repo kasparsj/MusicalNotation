@@ -1,6 +1,6 @@
 TITLE:: Chord
 summary:: Represents a Chord.
-related:: Classes/Symbol, Classes/Percussion, Classes/Note, Classes/Progression, Classes/Scale
+related:: Classes/Symbol, Classes/Percussion, Classes/MNNote, Classes/Progression, Classes/Scale
 categories:: Math, Tuning
 
 
@@ -20,10 +20,10 @@ ARGUMENT:: input
 Takes a symbol and returns a chord.
 
 METHOD:: directory
-Lists all link::Classes/Note:: names and Semitones.
+Lists all link::Classes/MNNote:: names and Semitones.
 
 METHOD:: names
-Lists all link::Classes/Note:: names.
+Lists all link::Classes/MNNote:: names.
 
 METHOD::choose
 Creates a random chord from the library, constrained by size.

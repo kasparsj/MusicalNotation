@@ -1,6 +1,6 @@
 TITLE:: Percussion
 summary:: A class that returns associated MIDI notes according to General MIDI Level 2.
-related:: Classes/Symbol, Classes/Note, Classes/Chord, Classes/Progression, Classes/Scale
+related:: Classes/Symbol, Classes/MNNote, Classes/Chord, Classes/Progression, Classes/Scale
 categories:: External Control>MIDI
 
 DESCRIPTION::

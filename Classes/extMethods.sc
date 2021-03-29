@@ -6,9 +6,9 @@ http://www.cyberpunk.net.ar/
 */
 
 
-// Note.sc
+// MNNote.sc
 + SimpleNumber {
-  asNote { ^Note.all.parent.findKeyForValue(this).asSymbol; }
+  asMNote { ^MNNote.all.parent.findKeyForValue(this).asSymbol; }
   asPercussion { ^Percussion.all.parent.findKeyForValue(this).asSymbol; }
   asNoteMIDI { |octave=5| ^this + (12*octave); }
   asMusicalNotation { ^this; }
@@ -21,7 +21,7 @@ http://www.cyberpunk.net.ar/
 
   asMusicalNotation {
     var tests = [
-      (type: \note, result: this.asNote),
+      (type: \note, result: this.asMNNote),
       (type: \chord, result: this.asChord),
       (type: \percussion, result: this.asPercussion)
     ]
@@ -33,7 +33,7 @@ http://www.cyberpunk.net.ar/
     } { this };
   }
 
-  asNote { ^Note.at(this); }
+  asMNNote { ^MNNote.at(this); }
   asChord { ^Chord.at(this); }
   asPercussion { ^Percussion.at(this); }
 
@@ -41,7 +41,7 @@ http://www.cyberpunk.net.ar/
 }
 
 + String {
-  asNote { ^this.asSymbol.asNote; }
+  asMNNote { ^this.asSymbol.asMNNote; }
   asChord { ^this.asSymbol.asChord; }
   asPercussion { ^this.asSymbol.asPercussion; }
   asMusicalNotation { ^this.asSymbol.asMusicalNotation; }
@@ -52,7 +52,7 @@ http://www.cyberpunk.net.ar/
 }
 
 + Collection {
-  asNote { ^this.collect(Note.at(_)); }
+  asMNNote { ^this.collect(MNNote.at(_)); }
   asChord { ^this.collect(Chord.at(_)); }
   asPercussion { ^this.collect(Percussion.at(_)); }
   asMusicalNotation {
@@ -74,7 +74,7 @@ http://www.cyberpunk.net.ar/
   chordProgression { |name = \sad, key = \c|
 
     var chords = [];
-    var root = Note.at(key);
+    var root = MNNote.at(key);
     var progression = Progression.at(name).degrees;
     var major = [\maj, \min, \min, \maj, \maj, \min, \dim];
     var minor = [\min, \dim, \maj, \min, \min, \maj, \maj];

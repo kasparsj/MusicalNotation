@@ -1,5 +1,7 @@
 # MusicalNotation
 
+**In this fork Note class has been renamed to MNNote, for compatability with wslib.**
+
 A set of classes related to Musical Notation (Percussion, Note, Chord, Progression).
 
 ## Installation
@@ -10,16 +12,16 @@ b/ Execute this -> `Quarks.install("https://github.com/lvm/MusicalNotation");`
 
 ## Usage
 
-### Note
+### MNNote
 
 ```
-Note.at(\c);
+MNNote.at(\c);
 -> 0
 
-Note.g;
+MNNote.g;
 -> 7
 
-Note.directory;
+MNNote.directory;
 -> a: Semitone 9
 af: Semitone 8
 as: Semitone 10
@@ -30,10 +32,10 @@ cs: Semitone 1
 d: Semitone 2
 ...
 
-Note.names;
+MNNote.names;
 -> [ a, af, as, b, bf, c, cs, d, df, ds, e, ef, f, fs, g, gf, gs ]
 
-[\c, \a, \f, \e].asNote;
+[\c, \a, \f, \e].asMNNote;
 -> [ 0, 9, 5, 4 ]
 
 Pseq([\c, \a, \f, \e], inf).asStream.nextN(10);

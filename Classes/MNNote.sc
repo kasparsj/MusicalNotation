@@ -1,5 +1,5 @@
 /*
-Note class
+MNNote class
 
 (c) 2018 by Mauro <mauro@sdf.org>
 http://www.cyberpunk.net.ar/
@@ -8,7 +8,7 @@ A class that returns Chromatic semitones.
 
 */
 
-Note {
+MNNote {
   var <symbol;
   classvar <all;
 

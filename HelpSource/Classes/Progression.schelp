@@ -1,6 +1,6 @@
 TITLE:: Progression
 summary:: Represents a Chord Progression.
-related:: Classes/Symbol, Classes/Percussion, Classes/Note, Classes/Chord, Classes/Scale
+related:: Classes/Symbol, Classes/Percussion, Classes/MNNote, Classes/Chord, Classes/Scale
 categories:: Math, Tuning
 
 
